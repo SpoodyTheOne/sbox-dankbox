@@ -1,0 +1,34 @@
+undolist {
+    left:10px;
+    bottom:10px;
+    
+    position:absolute;
+    height: 800px;
+    width:500px;
+
+    border: 2px solid red;
+
+    display:flex;
+
+    .msg {
+        width:100%;
+        height:80px;
+        background-color: red;
+
+        font-size:30%;
+        font-family: poppins;
+        font-weight: bold;
+        line-height:80px;
+
+        align-self: flex-end;
+
+        opacity:0;
+
+        transition:opacity 20s ease;
+
+    }
+
+    .msg.show {
+        opacity:1;
+    }
+}
